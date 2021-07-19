@@ -1,16 +1,16 @@
-package _03_animals_original;
+package _04_animals_inheritance;
 
-public class Cat {
+public class Animal {
 	String name;
 	String furColor;
 	boolean isGirl;
+	Animal(String name, String furColor, boolean isGirl) {
 	
-	Cat(String name, String furColor, boolean isGirl) {
-		this.name=name;
-		this.furColor=furColor;
-		this.isGirl=isGirl;
+	this.name=name;
+	this.furColor=furColor;
+	this.isGirl=isGirl;
+	
 	}
-	
 	public void printName() {
 		System.out.println("My name is "+name);
 	}
@@ -25,5 +25,4 @@ public class Cat {
 	public void play() {
 		System.out.println("Playing");
 	}
-	
 }
